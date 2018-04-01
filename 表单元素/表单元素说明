@@ -1,0 +1,27 @@
+1.html5有以下新的表单元素
+<datalist>
+<keygen>
+<output>
+不是所有的浏览器都支持表单元素
+
+
+2.<datalist>元素规定输入域的选项列表
+    <datalist>属性规定form或input域应该有自动完成功能,当用户自动完成域中开始输入时,浏览器应该显示填写的选项
+
+
+3.<keygen>元素
+    <keygen> 元素的作用是提供一种验证用户的可靠办法
+    <keygen> 标签规定用于表单的迷失\对生成器的字段
+    当提交表单时会生成两个键,一个私匙,一个公匙
+    私匙存储于客户端,公匙被发送到服务器,公匙用于之后验证客户端证书
+
+4.output标签定义不同类型的输出,比如脚本的输出
+
+5.<form>新属性:
+    autocomplete
+    novalidate
+    <input>新属性
+    autocomplete
+    autofocus
+    form
+    formaction 描述表单提交的URL地址,会覆盖<form>元素的action属性

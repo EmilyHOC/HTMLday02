@@ -1,0 +1,8 @@
+1.一个语义能够清晰描述意义给浏览器和开发者
+
+2.HTML5中新的语义元素
+    <header><nac><section><article><aside><figcaption><figure><footer>
+
+    <nav>标签定义导航链接部分
+    <aside>标签定义页面区域之外的内容
+    <footer>元素描述文档的底部区域

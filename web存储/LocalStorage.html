@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LocalStrorage</title>
+</head>
+<body>
+        <div id="result"></div>
+        <script>
+            if(typeof (Storage)!=="undefined"){
+                localStorage.sitename="web存储";
+                document.getElementById("result").innerHTML="网站名"+localStorage.sitename;
+            }else {
+                document.getElementById("result").innerHTML="对不起,您的浏览器不支持web存储";
+            }
+        </script>
+        <!--使用key="sitename和value创建一个localStory键值对"-->
+
+</body>
+</html>

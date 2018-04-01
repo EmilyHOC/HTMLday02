@@ -1,0 +1,22 @@
+1.HTML5web存储
+        使用HTML5可以在本地存储用户的浏览数据,这些存储不会被保存在服务器上上,只用于用户请求网站数据上,也可以存储大量的数据而不影响网站的性能.
+        数据以键/值的存在
+
+2.客户端存储数据的两个对象
+        localStorage:没有时间限制的数据存储
+        sessionStorage:针对一个session的数据存储,当用户关闭浏览器窗口后,数据将会被删除
+
+        在使用web存储前,应该检查是否支持localStorage和sessionStorage
+        if(typeof(Storage!=="undefine")){}else{}
+
+3.Web Storage开发一个简单的网站列表程序
+        *可以输入网站名,网址,以网站名作为kry存入localStorage
+        *根据网站名,查找网址
+        *列出当前保存的网址
+        4.常用的有如下几个（以localStorage为例:
+        保存数据：localStorage.setItem(key,value);
+         读取数据：localStorage.getItem(key);
+         删除单个数据：localStorage.removeItem(key);
+         删除所有数据：localStorage.clear();
+         得到某个索引的key：localStorage.key(index);
+         提示: 键/值对通常以字符串存储，你可以按自己的需要转换该格式。

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8"/>
+     <style type="text/css">
+         #div1 {
+             width: 350px;height: 70px;padding: 10px;border: 1px; solid-color: #aaaaaa;
+         }
+         </style>
+     <script>
+         function allowDrap(ev) {
+             ev.preventDefault();
+         }
+         function drag(ev){
+             ev.dataTransfer.setData("Text",ev.target.id);
+         }
+         function drop(ev) {
+             ev.preventDefault();
+             var  data=ev.dataTransfer.getData("Text");
+             ev.target.appendChild(document.getElementById(data));<!--把被元素追加到目标元素中-->
+         }
+     </script>
+    <p>拖动图片到矩形框中</p>
+     <div id="div1" ondrag="drop(event)" ondragover="allowDrap()"></div>
+     </br>
+     <img src="logo.png" draggable="true" ondragover="drag(event)" width="336" height="69">
+
+
+</body>
+</html>
